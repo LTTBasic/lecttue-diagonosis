@@ -1,0 +1,1 @@
+# lecttue-diagonosis
