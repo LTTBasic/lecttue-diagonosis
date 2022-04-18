@@ -7,11 +7,8 @@
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
-    --color-blue: #73aace;
-    --color-yellow: #fff7d1;
-    --color-orange: #feb546;
     --color-black: #000000;
-    --color-green: #25a02f;
+    --color-green: #3a8140;
     --color-light-green: #7fdb86;
     
     /* Font size */
@@ -99,27 +96,27 @@ p {
     font-weight: var(--weight-bold);
     color: var(--color-black);
     padding: 0.3em;
-    background-color: var(--color-light-green);
+    background-color: var(--color-green);
     transition: all var(--animation-duration) ease-in-out;
-    z-index: 1;  /* 가장 앞으로 두게함*/
+    z-index: 1;
 }
 
 .navbar-logo {
     font-size: var(--font-large);
-    color: var(--color-green);
+    color: var(--color-light-green);
     margin-right: 0.4em;
 }
 
 /* Home */
 #home {
-    background: url(imgs/background.png) center/cover no-repeat;
+    background: url(imgs/background2.png) center/cover no-repeat;
     padding: 380px;
     text-align: center;
 }
 
 .home-logo {
     font-size: var(--font-large);
-    color: var(--color-green);
+    color: var(--color-light-green);
     margin-right: 0.4em;
 }
 
@@ -134,20 +131,18 @@ p {
     color: var(--color-black);
 }
 
-.home__contact {
-    color: var(--color-dark-grey);
+.home__button {
+    color: var(--color-light-white);
     font-size: var(--font-regular);
     font-weight: var(--weight-bold);
     margin: 24px;
     padding: 8px 12px;
-    border: 2px solid var(--color-grey);
+    border: 2px solid var(--color-light-white);
     border-radius: var(--size-border-radius);
 }
 
-.home__contact:hover {
-    border: 1.1px outset var(--color-light-green);
-    background-color: var(--color-light-green);
-    color: var(--color-light-white);
+.home__button:hover {
+    background-color: var(--color-green);
     transition: all 125ms ease-out;
 }
 

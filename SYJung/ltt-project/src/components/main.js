@@ -7,7 +7,7 @@ class Main extends Component {
                 <i class="home-logo fa-solid fa-jet-fighter-up"></i>
                 <span class="home__title">Welcome to LTT</span>
                 <h2 class="home__description">Start diagnosing disease<br/>in facility crops!</h2>
-                <button class="home__contact">Start Diagnostics</button>
+                <button class="home__button">Start Diagnostics</button>
             </section>
         );
     }
