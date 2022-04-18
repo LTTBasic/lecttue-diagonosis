@@ -110,7 +110,7 @@ p {
 /* Home */
 #home {
     background: url(imgs/background2.png) center/cover no-repeat;
-    padding: 380px;
+    padding: 400px;
     text-align: center;
 }
 
@@ -158,7 +158,13 @@ p {
     margin: auto;
 }
 
-
+/* Upload */
+#upload {
+    background: url(imgs/background3.png) center/cover no-repeat;
+    border: 2px solid var(--color-light-white);
+    padding: 400px;
+    text-align: center;
+}
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
