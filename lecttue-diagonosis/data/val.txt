@@ -1,0 +1,4 @@
+/Users/jeong-geun-yeong/lecttue-diagonosis/data/images/valid/V006_77_0_00_05_03_11_0_c14_20201201_0001_S01_2.jpg
+/Users/jeong-geun-yeong/lecttue-diagonosis/data/images/valid/V006_77_0_00_05_03_11_0_c14_20201201_0004_S01_2.jpg
+/Users/jeong-geun-yeong/lecttue-diagonosis/data/images/valid/V006_77_0_00_05_03_11_0_c14_20201201_0007_S01_2.jpg
+/Users/jeong-geun-yeong/lecttue-diagonosis/data/images/valid/V006_77_0_00_05_03_11_0_c14_20201201_0008_S01_2.jpg

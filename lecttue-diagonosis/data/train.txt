@@ -1,0 +1,7 @@
+/Users/jeong-geun-yeong/lecttue-diagonosis/data/images/train/V006_77_0_00_05_03_11_0_b04_20201119_0000_S01_1.jpg
+/Users/jeong-geun-yeong/lecttue-diagonosis/data/images/train/V006_77_0_00_05_03_11_0_b04_20201119_0001_S01_1.jpg
+/Users/jeong-geun-yeong/lecttue-diagonosis/data/images/train/V006_77_0_00_05_03_11_0_b04_20201119_0002_S01_1.jpg
+/Users/jeong-geun-yeong/lecttue-diagonosis/data/images/train/V006_77_0_00_05_03_11_0_b04_20201119_0003_S01_1.jpg
+/Users/jeong-geun-yeong/lecttue-diagonosis/data/images/train/V006_77_0_00_05_03_11_0_b04_20201119_0004_S01_1.jpg
+/Users/jeong-geun-yeong/lecttue-diagonosis/data/images/train/V006_77_0_00_05_03_11_0_b04_20201119_0005_S01_1.jpg
+/Users/jeong-geun-yeong/lecttue-diagonosis/data/images/train/V006_77_0_00_05_03_11_0_b04_20201119_0006_S01_1.jpg
