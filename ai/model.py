@@ -29,16 +29,16 @@ class MaskDataset(object):
     self.path = path
 
     if 'val' in self.path :
-      self.img_path = "/Users/yangdongjae/Desktop/2022/Developing/lecttue-diagonosis/AI/Faster-RCNN/data/val/img/"
-      self.lab_path = "/Users/yangdongjae/Desktop/2022/Developing/lecttue-diagonosis/AI/Faster-RCNN/data/val/lab/"
-      self.label = list(sorted(os.listdir("/Users/yangdongjae/Desktop/2022/Developing/lecttue-diagonosis/AI/Faster-RCNN/data/val/lab")))
-      self.imgs = list(sorted(os.listdir("/Users/yangdongjae/Desktop/2022/Developing/lecttue-diagonosis/AI/Faster-RCNN/data/val/img")))
+      self.img_path = "/Users/yangdongjae/Desktop/2022/lecttue-diagonosis/ai/data/val/img/"
+      self.lab_path = "/Users/yangdongjae/Desktop/2022/lecttue-diagonosis/ai/data/val/lab/"
+      self.label = list(sorted(os.listdir("/Users/yangdongjae/Desktop/2022/lecttue-diagonosis/ai/data/val/lab")))
+      self.imgs = list(sorted(os.listdir("/Users/yangdongjae/Desktop/2022/lecttue-diagonosis/ai/data/val/img")))
 
     elif 'train' in self.path:
-      self.img_path = "/Users/yangdongjae/Desktop/2022/Developing/lecttue-diagonosis/AI/Faster-RCNN/data/train/img/"
-      self.lab_path = "/Users/yangdongjae/Desktop/2022/Developing/lecttue-diagonosis/AI/Faster-RCNN/data/train/lab/"
-      self.label = list(sorted(os.listdir("/Users/yangdongjae/Desktop/2022/Developing/lecttue-diagonosis/AI/Faster-RCNN/data/train/lab")))
-      self.imgs = list(sorted(os.listdir("/Users/yangdongjae/Desktop/2022/Developing/lecttue-diagonosis/AI/Faster-RCNN/data/train/img")))
+      self.img_path = "/Users/yangdongjae/Desktop/2022/lecttue-diagonosis/ai/data/train/img/"
+      self.lab_path = "/Users/yangdongjae/Desktop/2022/lecttue-diagonosis/ai/data/train/lab/"
+      self.label = list(sorted(os.listdir("/Users/yangdongjae/Desktop/2022/lecttue-diagonosis/ai/data/train/lab")))
+      self.imgs = list(sorted(os.listdir("/Users/yangdongjae/Desktop/2022/lecttue-diagonosis/ai/data/train/img")))
     # self.label = list(sorted(os.listdir(self.path+"/lab")))
     # self.imgs = list(sorted(os.listdir(self.path+"/img")))
 
@@ -68,8 +68,8 @@ data_transform = transforms.Compose([  # transforms.Compose : list 내의 작업
 def collate_fn(batch):
   return tuple(zip(*batch))
 
-dataset = MaskDataset(data_transform,'/Users/yangdongjae/Desktop/2022/Developing/lecttue-diagonosis/AI/Faster-RCNN/data/train/')
-val_dataset = MaskDataset(data_transform, '/Users/yangdongjae/Desktop/2022/Developing/lecttue-diagonosis/AI/Faster-RCNN/data/val/')
+dataset = MaskDataset(data_transform,'/Users/yangdongjae/Desktop/2022/lecttue-diagonosis/ai/data/train/')
+val_dataset = MaskDataset(data_transform, '/Users/yangdongjae/Desktop/2022/lecttue-diagonosis/ai/data/val/')
 
 data_loader = torch.utils.data.DataLoader(dataset, batch_size = 4, collate_fn = collate_fn)
 val_data_loader = torch.utils.data.DataLoader(val_dataset, batch_size = 4,collate_fn = collate_fn)
@@ -110,6 +110,7 @@ for epoch in range(num_epochs):
         losses.backward()
         optimizer.step() 
         epoch_loss += losses
+        print("losses : {losses}")
     print(f'epoch : {epoch+1}, Loss : {epoch_loss}, time : {time.time() - start}')
 
 torch.save(model.state_dict(),f'model_{num_epochs}.pt')
