@@ -61,8 +61,10 @@ class Data():
     boxes.append(self.generate_box(json_data))
     labels.append(self.generate_label(json_data))
 
+    ### boxes --> transform 
     boxes = torch.as_tensor(boxes, dtype = torch.float32)
     labels = torch.as_tensor(labels, dtype = torch.int64)
+    
 
     if json_data['annotations']['risk'] == None:
       print(file,json_data,"!@34$@!$@!$")

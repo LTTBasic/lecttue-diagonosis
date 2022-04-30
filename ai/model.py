@@ -12,6 +12,7 @@ from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 import time
 import data
 from glob import glob
+import cv2
 
 # if torch.cuda.is_available():
 #   device = torch.device("cuda:0")
@@ -50,8 +51,29 @@ class MaskDataset(object):
     label_path = self.lab_path + file_label 
     
     img = Image.open(img_path).convert("RGB")
-    target = self.data.generate_target(label_path)
 
+    
+    target = self.data.generate_target(label_path)
+    ###
+    Wratio, Hratio = img.size
+
+    Wratio = 800/Wratio
+    Hratio = 800/Hratio 
+
+    ratioList = [Wratio, Hratio, Wratio, Hratio]
+    bbox = []
+
+    for box in target["boxes"]:
+      box = [int(a * b) for a,b in zip(box,ratioList)]
+      bbox.append(box)
+
+    bbox = torch.as_tensor(bbox, dtype = torch.float32)
+
+    target['boxes'] = bbox
+    print(target['boxes'],"\n\n")
+    ###
+
+    img = img.resize((800,800))    
     if self.transform is not None:
       img = self.transform(img)
   
