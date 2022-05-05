@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Upload extends Component {
+class UploadPage extends Component {
     render() {
         return (
             <section id="upload">
@@ -35,5 +35,5 @@ class Upload extends Component {
     }
 }
 
-export default Upload;
+export default UploadPage;
 

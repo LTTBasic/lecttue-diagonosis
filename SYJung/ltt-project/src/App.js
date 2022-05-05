@@ -1,15 +1,16 @@
+import {Routes, Route} from 'react-router-dom'
 import { Fragment } from "react";
-import Navbar from "./components/navbar";
 import './app.css';
-import Main from "./components/main";
-import Upload from "./components/upload";
+import UploadPage from "./pages/uploadPage";
+import MainPage from "./pages/mainPage";
 
 function App() {
   return (
     <Fragment>
-        <Navbar></Navbar>
-        <Main></Main>
-        <Upload></Upload>
+        <Routes>
+          <Route path='/' element={<MainPage/>}/>
+          <Route path='/upload' element={<UploadPage />}/>
+        </Routes>
     </Fragment>
   );
 }
