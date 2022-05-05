@@ -30,8 +30,7 @@ class Upload extends Component {
                     </footer>
                     </div>
                 </div>
-            </section>
-            
+            </section>  
         );
     }
 }
