@@ -1,0 +1,7 @@
+train: ../images/train/  
+val: ../images/vaid/  
+test: ../images/test/
+
+# Classes
+nc: 7 # number of classes
+names: ['0','1','2','3','4','5','6']
