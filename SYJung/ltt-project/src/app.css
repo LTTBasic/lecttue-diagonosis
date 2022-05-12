@@ -161,8 +161,8 @@ p {
 /* Upload */
 #upload {
     background: url(imgs/background3.png) center/cover no-repeat;
-    border: 2px solid var(--color-light-white);
-    padding: 400px;
+    /* border: 2px solid var(--color-light-white); */
+    padding: 450px;
     text-align: center;
 }
 
