@@ -18,15 +18,15 @@ const MainSection = () => {
         <MainContent>
             <MainH1>Ai Disease Diagnosis</MainH1>
             <MainP>
-            Comment
+            Let's check the disease state of crops.
             </MainP>
             <MainBtnWrapper>
-                <Button to="signup" 
+                <Button to="/signup" 
                 onMouseEnter={onHover} 
                 onMouseLeave={onHover}
                 primary="true"
                 dark="true">
-                    Get Started {hover ? <ArrowForward /> :<ArrowRight />}
+                    Sign Up {hover ? <ArrowForward /> :<ArrowRight />}
                 </Button>
             </MainBtnWrapper>
         </MainContent>

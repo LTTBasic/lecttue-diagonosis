@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
-
 export const MainSectionContainer = styled.div`
     background: #0c0c0c;
     display: flex;
@@ -16,17 +15,18 @@ export const MainSectionContainer = styled.div`
         content: '';
         position: absolute;
         top: 0;
-        left 0;
+        left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%), rgba(0,0,0,0.6) 100%), 
+        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%), rgba(0,0,0,0.6) 100% ,
         linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%)
+        
     }
     z-index: 2;
 `;
 
 export const MainBg= styled.div`
-    postion: absolute;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -49,20 +49,19 @@ export const MainContent = styled.div`
     max-width: 1235px;
     position: absolute;
     padding: 200px 24px 8px 24px;
-    flex-direciton: column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     
 `;
 export const MainH1 = styled.h1`
     color: #fff;
-    font-align: center;
+    text-align: center;
     font-size: 60px;
-    @meida screen and (max-width:1235px) {
-        font-size: 48px;
+    @media screen and (max-width:1235px){
+        font-size:48px;
     }
-
-    @meida screen and (max-width:768px) {
+    @media screen and (max-width:768px){
         font-size: 40px;
     }
 `;
@@ -73,11 +72,11 @@ export const MainP = styled.p`
     font-size: 40px;
     text-align: center;
     max-width: 100%;
-    @meida screen and (max-width:1235px) {
+    @media screen and (max-width:1235px) {
         font-size: 24px;
     }
-
-    @meida screen and (max-width:768px) {
+    
+    @media screen and (max-width:768px){
         font-size: 24px;
     }
 `;
@@ -91,11 +90,11 @@ export const MainBtnWrapper = styled.div`
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
-    margin-lef: 8px;
+    margin-left: 8px;
     font-size: 20px;
 `;
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
-    margin-lef: 8px;
+    margin-left: 8px;
     font-size: 20px;
 `;
