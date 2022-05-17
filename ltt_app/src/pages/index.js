@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
-import MainSection from '../components/MainSection'
+import Footer from '../components/Footer'
+import InfoSection from '../components/InfoSection'
+import { homeObjOne } from '../components/InfoSection/Data'
+import MainSection from '../components/MainSection' 
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 
@@ -14,6 +17,8 @@ const Home = () => {
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
         <MainSection />
+        <InfoSection {...homeObjOne}/>
+        <Footer />
     </>
   )
 }
