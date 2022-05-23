@@ -92,31 +92,57 @@ p {
     position: fixed;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
+    align-items: center;
     color: var(--color-black);
-    padding: 0.3em;
-    background-color: var(--color-green);
+    padding: 16px;
+    background-color: var(--color-light-green);
     transition: all var(--animation-duration) ease-in-out;
     z-index: 1;
+    border: 2px solid var(--color-light-green);
+    border-radius: var(--size-border-radius);
+}
+
+.navbar__menu {
+    display: flex;
+    margin: 4px;
+}
+
+.navbar__menu__item {
+    font-size: var(--font-medium);
+    color: var(--color-light-white);
+    padding: 1px 15px;
+    margin: 0 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: var(--size-border-radius);
+    background-color: var(--color-light-green);
+}
+
+.navbar__menu__item:hover {
+    border-color: var(--color-green);
+    border-radius: var(--size-border-radius);
+    background-color: var(--color-green);
 }
 
 .navbar-logo {
-    font-size: var(--font-large);
-    color: var(--color-light-green);
+    font-size: var(--font-medium);
+    color: var(--color-green);
     margin-right: 0.4em;
 }
 
 /* Home */
 #home {
-    background: url(imgs/background2.png) center/cover no-repeat;
+    background: url(imgs/background.png) center/cover no-repeat;
     padding: 400px;
     text-align: center;
 }
 
 .home-logo {
     font-size: var(--font-large);
-    color: var(--color-light-green);
+    color: var(--color-green);
     margin-right: 0.4em;
 }
 
@@ -132,12 +158,12 @@ p {
 }
 
 .home__button {
-    color: var(--color-light-white);
+    background-color: var(--color-light-green);
     font-size: var(--font-regular);
     font-weight: var(--weight-bold);
     margin: 24px;
     padding: 8px 12px;
-    border: 2px solid var(--color-light-white);
+    border: 2px solid var(--color-green);
     border-radius: var(--size-border-radius);
 }
 
@@ -160,7 +186,7 @@ p {
 
 /* Upload */
 #upload {
-    background: url(imgs/background3.png) center/cover no-repeat;
+    background: url(imgs/background.png) center/cover no-repeat;
     /* border: 2px solid var(--color-light-white); */
     padding: 450px;
     text-align: center;
