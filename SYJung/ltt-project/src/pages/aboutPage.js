@@ -20,7 +20,7 @@ class AboutPage extends Component {
                             <div className="introduction__speech-bubble">
                                 <p>
                                     성명: 철수 <br/>
-                                    역할: Front-End
+                                    역할: Front-End <br/>
                                 </p>
                                 <p className="name"><a href="https://github.com/LTTBasic/lecttue-diagonosis" target="blank">철수</a> / LTT</p>
                             </div>
