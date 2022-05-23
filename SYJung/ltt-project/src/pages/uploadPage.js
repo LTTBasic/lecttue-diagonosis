@@ -6,8 +6,8 @@ import Navbar from '../components/navbar';
 // yarn add firebase
 // yarn add global firebase-tools  
 // yarn firebase login
-// yarn firebase init >> [문제점 발생] 호스팅이 계속 실패함. 일단 여기까지..  오늘 너무 많이했다.
-// firebase functions 기능이 이제는 유료화가 된거 같다. 지금까지 설정 다 해놨는데.. 이런 
+// yarn firebase init >> [문제점 발생] 호스팅이 계속 실패함. 
+// firebase functions 기능이 이제는 유료화가 된거 같다. 
 class UploadPage extends Component {
     
     state = {

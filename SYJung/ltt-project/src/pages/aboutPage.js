@@ -21,6 +21,22 @@ class AboutPage extends Component {
                                 <p>
                                     성명: 철수 <br/>
                                     역할: Front-End <br/>
+                                    oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+                                </p>
+                                <p className="name"><a href="https://github.com/LTTBasic/lecttue-diagonosis" target="blank">철수</a> / LTT</p>
+                            </div>
+                        </div>
+                        <div className="introduction">
+                            <img
+                                src={example}
+                                alt="Example"
+                                className="introduction__avatar"
+                            />
+                            <div className="introduction__speech-bubble">
+                                <p>
+                                    성명: 영희 <br/>
+                                    역할: Back-End <br/>
+                                    oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
                                 </p>
                                 <p className="name"><a href="https://github.com/LTTBasic/lecttue-diagonosis" target="blank">철수</a> / LTT</p>
                             </div>
