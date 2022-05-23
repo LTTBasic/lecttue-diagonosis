@@ -6,13 +6,13 @@ class Navbar extends Component {
         return (
             <section id="navbar">
                 <div className="navbar__logo">
-                    <i className="navbar-logo fa-solid fa-fan"></i>
+                    <Link to='/'><i className="navbar-logo fa-solid fa-fan"></i></Link>
                     <Link to='/'>LTT</Link>
                 </div>
                 <ul className="navbar__menu">
-                    <li className="navbar__menu__item">Home</li>
-                    <li className="navbar__menu__item">About</li>
-                    <li className="navbar__menu__item">Contact</li>
+                    <Link to='/'><li className="navbar__menu__item">Home</li></Link>
+                    <Link to='/upload'><li className="navbar__menu__item">Start</li></Link>
+                    <Link to='/about'><li className="navbar__menu__item">About</li></Link>
                 </ul>
             </section>
         );

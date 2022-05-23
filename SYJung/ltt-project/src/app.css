@@ -192,6 +192,13 @@ p {
     text-align: center;
 }
 
+/* About */
+#about {
+    background: url(imgs/background.png) center/cover no-repeat;
+    padding: 450px;
+    text-align: center;
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
     #navbar {
