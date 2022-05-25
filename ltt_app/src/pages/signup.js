@@ -11,7 +11,7 @@ const SignUpage = () => {
       <>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
-        <h1> Login</h1>
+        <h1> 회원가입 </h1>
       </>
     
   )
