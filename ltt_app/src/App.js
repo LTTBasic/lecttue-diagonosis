@@ -5,6 +5,11 @@ import ServicePage from './pages/service';
 import SigninPage from './pages/signin';
 import SignUpage from './pages/signup';
 
+//conect with nodejs
+import axios from "axios";
+import { useEffect } from 'react';
+
+
 function App() {
   return (
     <Router>
