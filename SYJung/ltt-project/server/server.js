@@ -6,12 +6,13 @@
 // react와 node 서버 간에 데이터를 주고 받기 위해서는 프록시 모듈이 필요
 // yarn add http-proxy-middleware 프록시 설치
 
+// yarn add axios
 
 const express = require('express');
 const app = express();
 const test = require('./Router/test');
 
-app.use('/', test);
+app.use('/api', test);
 
 const port=5000; //React가 3000번 포트를 사용하기 때문에 node 서버가 사용할 포트넘버는 다른 넘버로 지정해준다.
 app.listen(port, ()=>{console.log(`Listening on port ${port}`)});
