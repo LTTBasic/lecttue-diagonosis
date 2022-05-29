@@ -39,6 +39,7 @@ body {
     margin: 0;
     font-family: 'Red Hat Mono', monospace;
     cursor: default;
+    background-color: #020707;
 }
 
 a {
@@ -62,142 +63,50 @@ button {
 h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
-    color: var(--color-black);
+    color: var(--color-light-white);
     margin: 16px 0;
 }
 
 h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
-    color: var(--color-black);
+    color: var(--color-light-white);
     margin: 8px 0;
 }
 
 h3 {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
-    color: var(--color-black);
+    color: var(--color-light-white);
     margin: 8px 0;
 }
 
 p {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
-    color: var(--color-black);
+    color: var(--color-light-white);
     margin: 4px 0;
 }
 
 /* Navbar */
-#navbar {
-    position: fixed;
-    width: 100%;
+.navBtn {
+    color: #fff;
     display: flex;
-    justify-content: space-between;
-    font-size: var(--font-large);
-    font-weight: var(--weight-bold);
     align-items: center;
-    color: var(--color-black);
-    padding: 16px;
-    background-color: var(--color-light-green);
-    transition: all var(--animation-duration) ease-in-out;
-    z-index: 1;
-    border: 2px solid var(--color-light-green);
-    border-radius: var(--size-border-radius);
-}
-
-.navbar__menu {
-    display: flex;
-    margin: 4px;
-}
-
-.navbar__menu__item {
-    font-size: var(--font-medium);
-    color: var(--color-light-white);
-    padding: 1px 15px;
-    margin: 0 4px;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
     cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: var(--size-border-radius);
-    background-color: var(--color-light-green);
 }
 
-.navbar__menu__item:hover {
-    border-color: var(--color-green);
-    border-radius: var(--size-border-radius);
-    background-color: var(--color-green);
-}
-
-.navbar-logo {
-    font-size: var(--font-medium);
-    color: var(--color-green);
-    margin-right: 0.4em;
-}
-
-/* Home */
-#home {
-    background: url(imgs/background.png) center/cover no-repeat;
-    padding: 400px;
-    text-align: center;
-    margin: auto;
-}
-
-.home-logo {
-    font-size: var(--font-large);
-    color: var(--color-green);
-    margin-right: 0.4em;
-}
-
-.home__title {
-    font-size: var(--font-large);
-    font-weight: var(--weight-bold);
-    
-}
-
-.home__title,
-.home__description {
-    color: var(--color-black);
-}
-
-.home__button {
-    background-color: var(--color-light-green);
-    font-size: var(--font-regular);
-    font-weight: var(--weight-bold);
-    margin: 24px;
-    padding: 8px 12px;
-    border: 2px solid var(--color-green);
-    border-radius: var(--size-border-radius);
-}
-
-.home__button:hover {
-    background-color: var(--color-green);
+.navBtn:hover {
+    color: rgb(149, 123, 221);
     transition: all 125ms ease-out;
-}
-
-/* Section common */
-.section {
-    padding: 50px;
-    text-align: center;
-    margin: auto;
-}
-
-.section__container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Upload */
-#upload {
-    background: url(imgs/background.png) center/cover no-repeat;
-    /* border: 2px solid var(--color-light-white); */
-    padding: 450px;
-    text-align: center;
 }
 
 /* About */
 #about {
-    background: url(imgs/background.png) center/cover no-repeat;
-    padding: 450px;
-    text-align: center;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -228,35 +137,22 @@ p {
 .introduction__speech-bubble {
     text-align: left;
     padding: 18px;
-    background-color: var(--color-white);
+    background-color: rgb(155, 125, 238);
     border-radius: var(--size-border-radius);
 }
 
 .introduction__speech-bubble p {
-    color: var(--color-light-grey);
+    color: var(--color-light-white);
 }
 
 .introduction__speech-bubble a {
     color: var(--color-light-green);
 }
 
-/* For below 768px screen width */
-@media screen and (max-width: 768px) {
-    #navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: var(--color-light-green);
-        display: block;
-    }
-
-    #home {
-        flex-direction: column;
-    }
+/* Service */
+#service {
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(162, 152, 185);
+    border-radius: 10px;
 }
-
-
-
-
-
-
-

@@ -1,19 +1,24 @@
-import {Routes, Route} from 'react-router-dom'
-import { Fragment } from "react";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import './app.css';
-import UploadPage from "./pages/uploadPage";
-import MainPage from "./pages/mainPage";
-import AboutPage from './pages/aboutPage';
+// import AboutPage from './pages/aboutPage';
+import Home from './pages';
+import AboutPage from './pages/about';
+import ServicePage from './pages/service';
+import SigninPage from './pages/signin';
+import SignUpage from './pages/signup';
 
 function App() {
   return (
-    <Fragment>
+    <Router>
         <Routes>
-          <Route path='/' element={<MainPage/>}/>
-          <Route path='/upload' element={<UploadPage />}/>
-          <Route path='/about' element={<AboutPage />}/>
+          {/* <Route path='/about' element={<AboutPage />}/> */}
+          <Route path="/" element={<Home />}  exact/>
+          <Route path="/signin" element={<SigninPage />}  exact/>
+          <Route path="/signup" element={<SignUpage />}  exact/>
+          <Route path="/services" element={<ServicePage />}  exact/>
+          <Route path="/about" element={<AboutPage />} exact/>
         </Routes>
-    </Fragment>
+    </Router>
   );
 }
 
