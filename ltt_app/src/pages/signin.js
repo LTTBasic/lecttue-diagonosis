@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
-
+import Footer from '../components/Footer'
 const SigninPage = () => {
     const[isOpen, setIsOpen] = useState(false)
     const toggle = () => {
@@ -11,7 +11,8 @@ const SigninPage = () => {
       <>
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle} />
-        <h1> sign in the page</h1>
+        <h1> 로그인 페이지 </h1>
+        <Footer />
       </>
     
   )

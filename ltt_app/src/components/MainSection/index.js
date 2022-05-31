@@ -16,7 +16,7 @@ const MainSection = () => {
             <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
         </MainBg>
         <MainContent>
-            <MainH1>Ai Disease Diagnosis</MainH1>
+            <MainH1>AI Disease Diagnosis</MainH1>
             <MainP>
             Let's check the disease state of crops.
             </MainP>
