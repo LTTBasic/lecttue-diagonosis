@@ -1,7 +1,7 @@
 # Facility Crop Disease Prediction(lettuce-diagonosis)
 
 <p align='center'>
-  <b>We looked at the potential of smart farms, thought of ideas, and created some of them as homepages.</b>
+  <b>🌱We looked at the potential of smart farms, thought of ideas, and created some of them as homepages.🌱</b>
 </p>
 
 ## Description
