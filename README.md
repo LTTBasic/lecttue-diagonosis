@@ -1,7 +1,7 @@
 # Facility Crop Disease Prediction(lettuce-diagonosis)
 
 <p align='center'>
-  <b>🌱We looked at the potential of smart farms, thought of ideas, and created some of them as homepages.🌱</b>
+  <b>🌱We looked at the potential of smart farms, thought of ideas in our own way, and implemented some of them as models.🌱</b>
 </p>
 
 ## Description
@@ -29,7 +29,7 @@ More detailed description can be found through <a href=''>this link</a>
 </table>
                
 ## Environment
--??
+- Ubuntu 18.04(20TFLOPS, RTX6000), VIM, Jupyter Notebook
 
 ## Dataset
 - Facility Crop Recognition : <a href='https://aihub.or.kr/aidata/30729'>AI hub 시설 작물 진단 데이터셋</a>
@@ -50,28 +50,19 @@ We use **YOLOV5* and **Faster R-CNN**. YOLOv5 is a real-time object detection mo
   <img src='https://github.com/LTTBasic/lecttue-diagonosis/blob/GeunYeongJeong/Picture/Flow%20chart.PNG'></img>
 </p>
 
-## How to do?(Demo)
 
 ## Training
 
 **Object Detection Training by YOLOv5**
 
 - Original yolov5 github : <a href='https://github.com/ultralytics/yolov5'>yolov5</a>
-- Train description : <a href=''>Helped Sites</a>
-- Performance evaluation and results
-
-<img src='https://github.com/LTTBasic/lecttue-diagonosis/blob/GeunYeongJeong/Picture/8d12d28c-b9e3-4251-b36c-a1d1b8f15ce4.png' width="70%" height="70%"></img>
+- Train description : <a href='https://lynnshin.tistory.com/47'>Helped Sites</a>
 
 **Object Detection Training by Faster R-CNN**
 
-- Train description : <a href='https://lynnshin.tistory.com/47'>Helped Sites</a>
-- Performance evaluation and results
-
-<img src='성능평가이미지 Faster R-CNN' width="70%" height="70%"></img>
+- Train description : <a href='https://www.analyticsvidhya.com/blog/2018/11/implementation-faster-r-cnn-python-object-detection/'>Helped Sites</a>
 
 # Output
 
-- 동영상 주소
-
-if you don't watch a output video, you should click <a href=''>here</a> to watch output video
+- To be added later
 
