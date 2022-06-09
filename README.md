@@ -14,7 +14,7 @@ We propose a site to help predict diseases in facility crops.
 
 - Finally, Apply crop treatment based on crop disease prediction results.
 
-More detailed description can be found through <a> 최종발표 자료 넣을 것 </a>
+More detailed description can be found through <a href=''>this link</a>
 
 ## Member(LTTBasic)
 
@@ -38,15 +38,16 @@ More detailed description can be found through <a> 최종발표 자료 넣을 �
 We use **YOLOV5* and **Faster R-CNN**. YOLOv5 is a real-time object detection model that can detect objects quickly.Faster R-CNNs are models with high accuracy and high recognition rates for overlapping or small objects.
 
 - YOLOv5
-<img src='yolov5image'></img>
+<img src='https://github.com/LTTBasic/lecttue-diagonosis/blob/GeunYeongJeong/Picture/%EC%9A%9C%EB%A1%9Cv5.PNG'></img>
+
 
 - Faster R-CNN
-<img src='Faster R-CNNimage'></img>
+<img src='https://github.com/LTTBasic/lecttue-diagonosis/blob/GeunYeongJeong/Picture/Faster%20R-CNN.jpg'></img>
 
 ## Our Model Flow Chart
 
 <p align="center">
-  <img src=''></img>
+  <img src='https://github.com/LTTBasic/lecttue-diagonosis/blob/GeunYeongJeong/Picture/Flow%20chart.PNG'></img>
 </p>
 
 ## How to do?(Demo)
@@ -59,11 +60,11 @@ We use **YOLOV5* and **Faster R-CNN**. YOLOv5 is a real-time object detection mo
 - Train description : <a href=''>Helped Sites</a>
 - Performance evaluation and results
 
-<img src='성능평가이미지 yolov5' width="70%" height="70%"></img>
+<img src='https://github.com/LTTBasic/lecttue-diagonosis/blob/GeunYeongJeong/Picture/8d12d28c-b9e3-4251-b36c-a1d1b8f15ce4.png' width="70%" height="70%"></img>
 
 **Object Detection Training by Faster R-CNN**
 
-- Train description : <a href=''>Helped Sites</a>
+- Train description : <a href='https://lynnshin.tistory.com/47'>Helped Sites</a>
 - Performance evaluation and results
 
 <img src='성능평가이미지 Faster R-CNN' width="70%" height="70%"></img>
