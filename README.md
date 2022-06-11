@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Facility Crop Disease Prediction(lettuce-diagonosis)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align='center'>
+  <b>🌱We looked at the potential of smart farms, thought of ideas in our own way, and implemented some of them as models.🌱</b>
+</p>
 
-## Available Scripts
+## Description
+We propose a site to help predict diseases in facility crops.
+- First, Take a picture of a suspected disease crop.
 
-In the project directory, you can run:
+- Second, Upload photos after accessing the crop disease prediction site.
 
-### `npm start`
+- Third, We detect crops based on **Yolove5** and **Fast R-CNN** algorithms to determine the type of crops and determine the severity of **normal** or **disease**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Finally, Apply crop treatment based on crop disease prediction results.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+More detailed description can be found through <a href=''>this link</a>
 
-### `npm test`
+## Member(LTTBasic)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<table>
+  <tr>
+      <td align="center"><a href="https://github.com/YangDongJae"><img src="https://avatars.githubusercontent.com/u/59679706?v=4" width="100" height="100"><br /><sub><b>양동재</b></sub></td>
+      <td align="center"><a href="https://github.com/BoriLab"><img src="https://avatars.githubusercontent.com/u/42792735?v=4" width="100" height="100"><br /><sub><b>이승준</b></sub></td>
+      <td align="center"><a href="https://github.com/dackyy"><img src="https://avatars.githubusercontent.com/u/50398071?v=4" width="100" height="100"><br /><sub><b>정대기</b></sub></td>
+      <td align="center"><a href="https://github.com/yeobdoll"><img src="https://avatars.githubusercontent.com/u/74964580?v=4" width="100" height="100"><br /><sub><b>정성엽</b></sub></td> 
+      <td align="center"><a href="https://github.com/Jeong-GeunYeong"><img src="https://avatars.githubusercontent.com/u/82489406?v=4" width="100" height="100"><br /><sub><b>정근영</b></sub></td>
+     </tr>
+</table>
+               
+## Environment
+- Ubuntu 18.04(20TFLOPS, RTX6000), VIM, Jupyter Notebook
 
-### `npm run build`
+## Dataset
+- Facility Crop Recognition : <a href='https://aihub.or.kr/aidata/30729'>AI hub 시설 작물 진단 데이터셋</a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Model
+We use **YOLOV5* and **Faster R-CNN**. YOLOv5 is a real-time object detection model that can detect objects quickly.Faster R-CNNs are models with high accuracy and high recognition rates for overlapping or small objects.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- YOLOv5
+<img src='https://github.com/LTTBasic/lecttue-diagonosis/blob/GeunYeongJeong/Picture/%EC%9A%9C%EB%A1%9Cv5.PNG'></img>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+- Faster R-CNN
+<img src='https://github.com/LTTBasic/lecttue-diagonosis/blob/GeunYeongJeong/Picture/Faster%20R-CNN.jpg'></img>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Our Model Flow Chart
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="center">
+  <img src='https://github.com/LTTBasic/lecttue-diagonosis/blob/GeunYeongJeong/Picture/Flow%20chart.PNG'></img>
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Training
 
-## Learn More
+**Object Detection Training by YOLOv5**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Original yolov5 github : <a href='https://github.com/ultralytics/yolov5'>yolov5</a>
+- Train description : <a href='https://lynnshin.tistory.com/47'>Helped Sites</a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Object Detection Training by Faster R-CNN**
 
-### Code Splitting
+- Train description : <a href='https://www.analyticsvidhya.com/blog/2018/11/implementation-faster-r-cnn-python-object-detection/'>Helped Sites</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Output
 
-### Analyzing the Bundle Size
+- To be added later
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
